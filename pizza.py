@@ -13,8 +13,10 @@ def cutPizza(pizza, ingr_ps, max_cells, rows, columns):
     j = 0
     if pizza[i,j] == 'T':
         if pizza[i + 1, j] == 'M':
+            if max_cells % (i + 1) == 0:
+                # add a row below
 
-        elif pizza[i, j + 1] == 'T':
+        elif pizza[i, j + 1] == 'M':
 
 
 
